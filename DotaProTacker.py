@@ -273,7 +273,7 @@ async def button_callback(update, context):
 
 
 #ЗАПУСК
-app = ApplicationBuilder().token("8533401351:AAFV4DFLPP0G6Wud14uH6QOSliTm0IygZfM").build()
+app = ApplicationBuilder().token("").build()
 app.add_handler(CommandHandler("start", start))
 app.add_handler(CallbackQueryHandler(button_callback))
 app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND,
